@@ -7,7 +7,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-
+    justify-content: center;
     overflow-x: hidden;
     font-family: "Suisse Int'l";
     font-weight: normal;
@@ -21,3 +21,4 @@ body {
 *{
     z-index : 10 ;
 }
+

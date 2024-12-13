@@ -33,3 +33,7 @@ function setLanguage(lang) {
     dropdown.classList.remove('open');
     dropdown.style.animation = 'dropdownClose 0.3s forwards';
 }
+function toggleMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('show');
+}

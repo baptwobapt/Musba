@@ -211,7 +211,9 @@ hr {
 .textsect3 > p {
     width: 50%;
 }
-
+.resalien{
+    font-size: 200px;
+}
 
 .textsect4 {
     margin-top: 5vw;
@@ -223,6 +225,7 @@ hr {
 
 
 }
+
 .colonnes2 {
     gap: 100vw;
 }
@@ -288,13 +291,164 @@ hr {
     margin-left: 70px;
   }
 
+.resalien {
+    font-size: 200px;
+    display: block; /* Transforme le lien en bloc pour qu'il se comporte comme un div */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: inherit; /* Utilise la couleur du texte par défaut */
+    padding: 10px 20px; /* Ajoute des marges intérieures */
+    border-radius: 5px; /* Coins arrondis */
+    text-align: center; /* Centre le texte */
+}
+.resalien:hover {
+    color: #333333; /* Change la couleur du texte au survol */
+}
 
-
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     H2{
         font-size: 32px;
     }
     .part1{
         flex-direction: column;
     }
-  }
+    .vertical-line , .custom-line , .custom-line2{
+        display: none;
+    }
+    .musba svg {
+        display: block; /* Comporte le SVG comme un Ã©lÃ©ment bloc pour le centrage */
+        margin: 0 auto; /* Centre horizontalement */
+        width: 100vw; /* Taille dynamique basÃ©e sur la largeur de l'Ã©cran */
+        height: auto; /* Conserve les proportions naturelles */
+    }
+    .musba {
+        margin: 20px; /* Alignement similaire Ã  title-cut */
+        text-align: center; /* Centre le contenu horizontalement */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+        margin-top: 50px;
+    }
+    body {
+        overflow-x: hidden;
+        font-family: "Suisse Int'l";
+        font-weight: normal;
+        background-position: center;
+        background-color: #ffffff;
+        margin-right: 0vw;
+        padding: 0;
+    
+    }
+
+    .container-text{
+        width: 100vw;
+        margin-right: 0px;
+    }
+
+    p{
+        font-size: 20px;
+        text-align: left;
+
+    }
+
+    .name-artiste{
+        display: none;
+    }
+
+    .img1{
+        width: 100vw;
+        margin-left: 0px;
+        height: 350px;
+        margin-right: 0px;
+    }
+
+    .part2{
+        flex-direction: column;
+
+    }
+
+    .container-text2{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100vw;
+    }
+    .img2{
+        width: 105vw;
+        margin: 0px;
+        height: 350px;
+        margin-top: -5px;
+
+    }
+    .part3{
+        flex-direction: column;
+    }
+    .container-text3{
+        height: 800px;
+        justify-content: start;
+    }
+
+    .textsect3{
+        flex-direction: column;
+        margin-right: 60px;
+    }
+    .textsect3 p {
+        width: 100%;
+    }
+    
+
+    .musee-img{
+        flex-direction: column;
+    }
+
+    .museeph{
+        width: 100vw;
+        margin: 0px;
+        height: 380px;
+    }
+
+    .our-history{
+        margin-top: 40px;
+    }
+
+    h2 .title-cut{
+        text-align: center;
+    }
+    
+    .carre{
+        right: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .h2.title-cut span {
+        text-align: center;
+    }
+
+    h2.title-cut span:last-child{
+        text-align: center;
+    }
+
+    .events-list{
+        padding-left: 0px;
+        margin-left: 50px;
+
+    
+    }
+
+    .event-box{
+        flex-direction: column;
+    }
+    .resalien{
+        font-size: 200px;
+    }
+
+    .events-list li a{
+        color: #000;
+        padding-right:220px ;
+        font-size: 100px
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+}
