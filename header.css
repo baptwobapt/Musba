@@ -1,0 +1,198 @@
+.main-header {
+    
+    display: flex; /* Fixe le header en haut de l'écran */
+    align-items: center;
+    top: 0px ; /* Position à 0px du haut */
+    left: 0px; /* Position à 0px de la gauche */
+    width: 100%; /* Le header occupe toute la largeur de l'écran */
+    height: 80px; /* Hauteur du header */
+    background-color: #fefefe; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    justify-content: space-between;
+    padding: 0 20px; /* Marges intérieures */
+    z-index: 960; /* S'assurer qu'il soit au-dessus des autres éléments */
+}
+
+.LogoH {
+    height: 60px;
+}
+.zonetextH {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    gap: 10px;
+    
+}
+
+
+.linet {
+    display: block;
+    margin: 4px auto 0;
+    width: 20px;
+    height: 4px;
+    border-radius: 0px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.linet-1 {
+    background-color: #e60e0e; 
+}
+
+.linet-2 {
+    background-color: #0e70e6; 
+}
+
+.linet-3 {
+    background-color: #0ee653;
+}
+
+.linet-4 {
+    background-color: #e6c40e; 
+}
+
+.expoH, .colecH, .vieH, .visiH { 
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transform: translateX(0);
+    padding: 10px;
+    margin: 15px;
+}
+
+.expoH:hover .linet {
+    width: 100%; 
+}
+.colecH:hover .linet {
+    width: 100%; 
+}
+.vieH:hover .linet {
+    width: 100%; 
+}
+.visiH:hover .linet {
+    width: 100%; 
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.language-selector {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+    font-size: 20px;
+    min-width: 50px;
+    
+}
+
+.selected-language {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #000; /* Texte en noir */
+    
+    padding: 4px 4px;
+}
+
+.arrow-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.arrow-icon.rotate {
+    transform: rotate(90deg); /* Rotation de 90 degrés */
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+    animation: dropdownClose 0.3s forwards;
+}
+
+.language-dropdown.open {
+    display: block;
+    animation: dropdownOpen 0.3s forwards;
+}
+
+.language-dropdown li {
+    padding: 4px 4px;
+    padding-right: 30px;
+
+    cursor: pointer;
+    text-align: left; /* Alignement à gauche */
+    
+    color: #000; /* Texte en noir */
+}
+
+.language-dropdown li:hover {
+    background-color: #e0e0e0; /* Couleur de survol */
+}
+
+/* Animations pour la liste déroulante */
+@keyframes dropdownOpen {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 200px;
+        opacity: 1;
+    }
+}
+
+@keyframes dropdownClose {
+    from {
+        max-height: 200px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+.loupesel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

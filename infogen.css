@@ -1,0 +1,23 @@
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari et Edge */
+}
+
+body {
+
+    overflow-x: hidden;
+    font-family: "Suisse Int'l";
+    font-weight: normal;
+    background-position: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*{
+    z-index : 10 ;
+}

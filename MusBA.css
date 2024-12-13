@@ -1,0 +1,300 @@
+
+h2{
+    font-size: 70px;
+    padding-bottom: 50px;
+}
+
+.zonetextH{
+    font-size: 18px;
+}
+
+
+
+
+.musba {
+    margin: 20px; /* Alignement similaire Ã  title-cut */
+    text-align: center; /* Centre le contenu horizontalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+.musba svg {
+    display: block; /* Comporte le SVG comme un Ã©lÃ©ment bloc pour le centrage */
+    margin: 0 auto; /* Centre horizontalement */
+    width: 100vw; /* Taille dynamique basÃ©e sur la largeur de l'Ã©cran */
+    height: auto; /* Conserve les proportions naturelles */
+}
+
+.title{
+    font-size: 600px;
+}
+
+h2.title-cut {
+    margin: 0 9%;
+}
+
+h2.title-cut span {
+    font-size: 9.2vw;
+    display : block;
+    justify-content: center;
+    z-index: 11;
+    position: relative;
+
+}
+
+.title-museum{
+    font-size: 9.2vw;
+}
+    
+
+
+h2.title-cut span:last-child {
+    text-align:end;
+    justify-content: center;
+    margin-bottom: 70px;
+
+}
+.part1 {
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom : 300px;
+
+    
+}
+.part2 {
+    
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-top: 1vw;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 300px;
+}
+.part3 {
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.part4{
+    margin-top: 25vw;
+    font-size: 1vw;
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+
+}
+
+.musee-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    
+}
+
+
+.texte {
+    position: absolute; /* Position absolue pour le texte */
+    top: 50%; /* Positionne le texte Ã  50% de la hauteur du carrÃ© */
+    left: 50%; /* Positionne le texte Ã  50% de la largeur du carrÃ© */
+    transform: translate(-50%, -50%); /* Centre parfaitement le texte */
+    font-size: 24px; /* Taille du texte */
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    margin-top : 2300px;
+    }
+
+    /* Style commun pour tous les paragraphes */
+p {
+    text-align: justify; /* Justifie le texte */
+    font-size: 1.5vw;
+    margin: 0.5vw; /* Ajoute une marge de 20px tout autour */
+}
+
+
+.container-text{
+    width: 80vw;
+    padding: 10vw;
+    margin-right: 10vw;
+    background-color: #A3BEF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-text2{
+    width: 75vw;
+    padding: 8vw;
+    background-color: #F5BCA3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-text3{
+    width: 100vw;
+    height: 40vw;
+    padding: 5vw;
+    background-color: #f4f5a3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -5vw;
+    position: relative;
+    z-index: 4;
+}
+.container-text4{
+    width: 20vw;
+    height: 30vw;
+    background-color: #98f8a5;
+    display: flex;
+    justify-content: end;
+}
+.container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.name-artiste{
+    font-size: 3vw;
+    margin-left: -10vw;
+}
+.img1 {
+    margin-left: -5vw;
+    margin-right: 5vw;
+    height: 30vw;
+    width: auto;
+    position: relative;
+    
+}
+.img2 {
+    margin-left: 2vw;
+    margin-right: -5vw;
+    height: 25vw;
+    width: auto;
+    position: relative;
+}
+.museeph {
+    margin-right: 15vw;
+    height: 20vw;
+    width: auto;
+    position: relative;
+    z-index: 40000000;
+}
+
+
+hr {
+    border: none; /* Supprime les bordures par dÃ©faut */
+    height: 3px; /* DÃ©finir l'Ã©paisseur de la ligne */
+    background-color: #000000; /* Change la couleur de la ligne */
+    width: 60%; /* DÃ©finit la largeur de la ligne */
+    margin: 10px auto; /* Centrer la ligne et ajouter un peu d'espace autour */
+}
+.textsect3 {
+    display: flex;
+    flex-direction: row ;
+    gap: 10vw;
+    margin-left: 70px;
+    
+}
+
+.textsect3 > p {
+    width: 50%;
+}
+
+
+.textsect4 {
+    margin-top: 5vw;
+    margin-right: 6vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 25vw;
+
+
+}
+.colonnes2 {
+    gap: 100vw;
+}
+
+.carre{
+    width: 510px;
+    height: 700px;
+    background-color: #B6F5A3;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    z-index: 4;
+}
+
+.events{
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.events-list {
+    list-style: none;
+    z-index: 1;
+    position: relative;
+    padding-left: 150px;
+  }
+  
+  .events-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .events-list li .event-box {
+    display: flex;
+    border-top: 1px solid #000;
+    justify-content: space-between;
+    width: 35vw;
+    gap: 30px;
+    padding: 36px 0;
+  }
+
+  .events-list li a{
+    color: #000;
+    padding-right:220px ;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  li:last-child .event-box{
+    border-bottom: 1px solid #000;
+  }
+
+  .events-list{
+    z-index: 999;
+    position: relative;
+  }
+
+  .our-history{
+    margin-left: 70px;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    H2{
+        font-size: 32px;
+    }
+    .part1{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,137 @@
+h4 {
+    font-size: 100px;
+    width: 100vw;
+    margin-left : 10vw;
+    margin-top : 5vw;
+}
+
+
+.carre {
+    width: 70vw;
+    padding: 20vw;
+    margin-right: 10vw;
+    background-color: #A3BEF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+}
+.container-textresa{
+    width: 80vw;
+    padding: 10vw;
+    padding-top: 5vw;
+    margin-right: 10vw;
+    background-color: #A3BEF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.img {
+    height: 30vw;
+    width: auto;
+    position: relative;
+    
+}
+.imgresa {
+    height: 350px;
+    margin-left: -350px;
+}
+.form-container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacement entre les éléments */
+    margin-top: 40px;
+}
+
+/* Styles communs pour les champs de texte */
+.input-field {
+    width: 500px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: gray;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.input-field:focus {
+    color: black;
+    border-color: #888; /* Change la bordure au focus */
+    outline: none;
+}
+
+/* Styles pour les listes déroulantes */
+.dropdown {
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    appearance: none; /* Supprime le style natif du navigateur */
+    transition: border-color 0.3s ease;
+}
+
+.dropdown:focus {
+    border-color: #888;
+    outline: none;
+}
+
+/* Optionnel : Icône personnalisée pour la liste déroulante */
+.dropdown::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-top-color: #888;
+    pointer-events: none;
+}
+
+
+@font-face{
+    font-family: "Suisse Int'l";
+    src: url(/font/SuisseIntl-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: "Suisse Int'l";
+    src: url(/font/SuisseIntl-Regular.woff) format("woff");
+}
+.attendez {
+    font-size: 3vw;
+    margin-left: -20vw;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre les éléments */
+    font-size: 16px;
+    color: #555;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: black; /* Bleu pour les liens */
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: black; /* Bleu plus foncé au survol */
+}
+
+.breadcrumb span {
+    color: #999; /* Couleur des séparateurs */
+}
+
+.breadcrumb .current {
+    color: #000; /* Texte noir pour la page actuelle */
+    font-weight: bold; /* Met en gras la page actuelle */
+    pointer-events: none; /* Désactive le clic sur la page actuelle */
+}

@@ -1,0 +1,34 @@
+
+.vertical-line {
+    border-left: 0.3vw solid #000000; /* Ligne verticale noire */
+    position:absolute;
+    height: 260vw; /* Hauteur de la ligne */
+    top: 40vw;
+    right: 7vw;
+    z-index: -1;
+}
+
+
+
+.colonnes2 {
+    gap: 100vw;
+}
+
+.custom-line {
+    border-left: 40vw solid #000000; /* Ligne verticale noire */
+    position:absolute;
+    height: 0.3vw; /* Hauteur de la ligne */
+    top: 45vw;
+    right: 0vw;
+    z-index: -1;
+}
+
+.custom-line2 {
+    border-left: 40vw solid #000000; /* Ligne verticale noire */
+    position:absolute;
+    height: 0.3vw; /* Hauteur de la ligne */
+    top: 55vw;
+    left: 9.9vw;
+    z-index: -1;
+}
+

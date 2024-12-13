@@ -1,1 +1,296 @@
-test
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Musba</title>
+    <!-- Styles pour les deux sections -->
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="infogen.css">
+    <link rel="stylesheet" href="MusBA.css">
+    <link rel="stylesheet" href="lignes.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Barre de Recherche</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <img src="image/ecritlogo.png" alt="" class="LogoH">
+        <div class="zonetextH">
+            <div class="expoH">
+                <h3>Expositions et Évènements</h3>
+                <span class="linet linet-1"></span>
+            </div>
+            <div class="colecH">
+                <h3>Collections</h3>
+                <span class="linet linet-2"></span>
+            </div>
+            <div class="vieH">
+                <h3>Vie du musée</h3>
+                <span class="linet linet-3"></span>
+            </div>
+            <div class="visiH">
+                <h3>Visites et ateliers</h3>
+                <span class="linet linet-4"></span>
+            </div>
+
+        </div>
+        <div class="loupesel">
+            <div class="search-bar">
+                <button class="search-btn">
+                    <img src="image/loupe.png" alt="Rechercher" class="search-icon">
+                </button>
+            </div>
+            <div class="language-selector">
+                <div class="selected-language" onclick="toggleDropdown()">
+                    <span id="current-language">FR</span>
+                    <img src="image/arrow.png" alt="Flèche" class="arrow-icon">
+                </div>
+                <ul class="language-dropdown" id="language-dropdown"></ul>
+            </div>
+            <script src="header.js"></script>
+        </div>
+    </header>
+    <section class="musba">
+        <svg width="1233" height="277" viewBox="0 0 1233 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M186.369 272.122H138.21L69.5184 51.8446V272.122H23.2262V0.0588706H96.7711L162.476 216.959L227.808 0.0588706H301.353V272.122H255.06V51.8446L186.369 272.122Z"
+                fill="black" />
+            <path
+                d="M468.835 272.122V244.352C456.889 266.117 437.103 277 409.477 277C364.678 277 342.278 250.732 342.278 197.445V70.2323H386.704V186.563C386.704 194.818 387.077 201.573 387.824 206.827C388.57 212.455 390.064 218.084 392.304 223.713C394.544 229.342 398.65 233.47 403.877 236.472C409.103 239.474 415.45 240.6 423.663 240.6C453.529 240.6 468.835 219.961 468.835 177.932V70.2323H513.261V272.122H468.835Z"
+                fill="black" />
+            <path
+                d="M711.108 125.395H669.296C664.816 108.509 649.883 99.8778 625.243 99.8778C614.79 99.8778 606.204 102.129 598.737 106.257C591.271 110.385 587.911 115.639 587.911 122.018C587.911 134.777 596.871 142.657 614.79 146.035L643.163 151.664C654.363 153.915 663.696 156.542 671.536 159.169C679.375 161.795 686.842 165.173 693.935 169.676C700.655 174.179 705.881 180.183 709.615 186.938C712.975 194.068 714.841 202.323 714.841 211.705C714.841 231.969 706.628 248.105 690.202 259.738C673.775 271.371 653.616 277 629.723 277C605.457 277 585.671 270.996 569.991 258.612C554.312 246.229 544.979 230.093 542.739 210.579H586.044C590.151 232.344 605.084 243.227 631.216 243.227C643.163 243.227 652.869 240.975 660.336 236.097C667.802 231.594 671.536 225.214 671.536 216.959C671.536 203.449 659.962 194.068 636.816 189.189L606.577 183.185C587.538 179.433 572.605 172.678 562.152 163.672C551.325 154.666 546.099 141.531 546.099 124.27C546.099 107.008 553.938 93.1231 569.991 82.2406C586.044 71.3581 605.457 65.7292 627.857 65.7292C648.389 65.7292 666.309 70.9828 681.989 81.1148C697.295 91.6221 707.001 106.257 711.108 125.395Z"
+                fill="black" />
+            <path
+                d="M744.844 272.122V0.0588706H846.762C911.72 0.0588706 944.199 23.3249 944.199 69.4818C944.199 81.8653 941.213 93.4984 935.239 104.006C929.266 114.513 922.173 122.393 913.96 127.647C940.839 140.03 954.652 161.42 954.652 191.441C954.652 219.21 945.319 239.474 926.653 252.608C907.987 265.742 883.347 272.122 853.481 272.122H744.844ZM792.256 150.162V233.845H855.348C888.947 233.845 905.747 219.961 905.747 191.441C905.747 177.556 901.267 167.049 892.68 160.294C884.094 153.54 870.654 150.162 852.735 150.162H792.256ZM792.256 38.3353V113.762H851.241C881.107 113.762 896.04 101.004 896.04 74.7354C896.04 63.1024 891.934 54.0962 883.721 47.7167C875.508 41.7126 864.681 38.3353 851.241 38.3353H792.256Z"
+                fill="black" />
+            <path
+                d="M954.364 272.122L1055.16 0.0588706H1105.19L1206.73 272.122H1154.84L1133.56 211.705H1023.8L1002.9 272.122H954.364ZM1078.31 55.2219L1037.61 171.927H1119.37L1078.31 55.2219Z"
+                fill="black" />
+            <path d="M0 0.0981326H24.309V24.5331C24.309 13.8956 8.10301 3.81081 0 0.0981326Z" fill="black" />
+            <path d="M721.558 0.0981326H745.867V24.5331C745.867 13.8956 729.661 3.81081 721.558 0.0981326Z"
+                fill="black" />
+            <path
+                d="M1056.22 0H1015.51C1027.72 3.06847 1050.03 14.2354 1043.38 34.6074C1040.35 42.7878 1039.23 45.8248 1042.99 35.7203C1043.13 35.3463 1043.26 34.9754 1043.38 34.6074C1046.68 25.723 1052.22 10.7717 1056.22 0Z"
+                fill="black" />
+            <path d="M512.735 272.099V252.227C512.735 267.889 521.912 272.001 526.5 272.099H512.735Z" fill="black" />
+            <path
+                d="M256.123 255.243V272.122H239.201C238.714 272.14 238.251 272.139 237.818 272.122H239.201C245.589 271.882 256.123 268.336 256.123 255.243Z"
+                fill="black" />
+            <path d="M1206.25 271.974L1196.39 244.841C1202.33 260.778 1223.27 269.57 1233 271.974H1206.25Z"
+                fill="black" />
+        </svg>
+        <div class="vertical-line"></div>
+        <div class="custom-line"></div>
+        <div class="custom-line2"></div>
+    </section>
+    <h2 class="title-cut">
+        <span> Expositions </span>
+        <span> récentes</span>
+        
+
+
+    </h2>
+    <section class="part1">
+        <div class="container-text">
+            <h2>Hommage à Goya</h2>
+            <p>
+                Présenté dans le cadre du bicentenaire de l’arrivée de Goya (1746-1828) à Bordeaux, où l’artiste a passé
+                les
+                quatre dernières années de sa vie en exil pour raisons politiques, cet accrochage dévoile une vingtaine
+                d’œuvres.
+            <br><br>
+            Il réunit l’ensemble des estampes du maître espagnol conservées au musée, dont quatre lithographies
+            tauromachiques réalisées à Bordeaux, notamment l’épreuve unique du *Combat des taureaux*.
+            <br><br>
+            À cela s’ajoute un ensemble de dix eaux-fortes plus anciennes, inspirées des chefs-d’œuvre de Velázquez
+            exposés au Prado, représentant des portraits équestres de la famille royale, des bouffons de la cour, et
+            bien d'autres sujets.</p>
+        </div>
+        <div class="container-img">
+            <p class="name-artiste">Francisco de Goya</p>
+            <img src="https://m.musba-bordeaux.fr/sites/musba-bordeaux.fr/files/beaux_arts_bordeau_format_a5.jpg"
+                class="img1">
+        </div>
+    </section>
+    <section class="part2">
+        <div class="container-text2">
+            <h2>Rétrospective Jean Dupas</h2>
+            <p> Le peintre bordelais Jean Dupas (1882-1964) est l’un des grands représentants de l’Art déco. Formé à
+                l’École des Beaux-Arts de Bordeaux, puis à celle de Paris, il remporte le Grand Prix de Rome en 1910. Il
+                séjourne alors à la Villa Médicis, où il se lie notamment avec Robert Poughéon et Jean Despujols.
+                <br><br>
+                Sa participation à l’Exposition internationale des Arts décoratifs, en 1925, lui apporte la
+                reconnaissance de ses pairs ainsi qu’une forte notoriété publique.
+                <br><br>
+                Peintre, mais aussi affichiste et décorateur, il reçoit de nombreuses commandes par la suite. Parmi
+                celles-ci, on compte une fresque réalisée pour la Bourse du Travail à Bordeaux, entre 1937 et 1939.
+            </p>
+        </div>
+        <img src="image/img2.png" class="img2">
+    </section>
+    <section class="part3">
+        <div class="musee-img">
+            <h2 class="title-museum">
+                <span> Le musée </span>   
+            </h2>
+            <img src="image/museeph.png" class="museeph">
+        </div>
+        <div class="container-text3">
+            <h2 class="our-history">Notre histoire</h2>
+            <div class="textsect3">
+                <p> Ainsi que pour la plupart des grands musées régionaux, il est légitime de
+                    retenir l’arrêté Chaptal en date du 14 fructidor de l’an IX (1er septembre 1801)
+                    comme acte de fondation du . musée des Beaux-Arts de Bordeaux. En effet, le
+                    rapport présenté par le ministre, prévoyait l’envoi, dans les quinze villes retenues,
+                    d’un lot d’œuvres suffisamment important pour justifier la création d’un musée. </p>
+                <p> La situation bordelaise, après les événements révolutionnaires, ne différaient sans
+                    doute guère de celle des autres grandes villes du Consulat à la différence près qu’un
+                    nombre très limité d’œuvres avait pu être sauvé et rassemblé au dépôt de l’ancien
+                    couvent des Feuillants. </p>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <h2 class="title-cut">
+            <span> Événements </span>
+        </h2>
+        <div class="carre"></div>
+        <ul class="events-list">
+
+            <li>
+                <div class="event-box">
+                    <p>
+                        Vendredi 6 décembre <br>
+                        <span>Atelier Création textile</span>
+                    </p>
+
+                    <p>15h30 - 17h30</p>
+                </div>
+
+                <a href="reservations.html">Réserver<svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 10.5H19M19 10.5L6.5 1M19 10.5L6.5 20" stroke="black" stroke-width="2" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <div class="event-box">
+                    <p>
+                        Samedi 7 Décembre <br>
+                        <span>Cours de dessins adultes</span>
+                    </p>
+
+                    <p>11h00 - 13h00</p>
+                </div>
+
+                <a href="reservations.html">Réserver <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 10.5H19M19 10.5L6.5 1M19 10.5L6.5 20" stroke="black" stroke-width="2" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <div class="event-box">
+                    <p>
+                        Samedi 7 Décembre <br>
+                        <span>Atelier sculpture</span>
+                    </p>
+
+                    <p>15h30 - 17h30</p>
+                </div>
+
+                <a href="reservations.html">Réserver
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 10.5H19M19 10.5L6.5 1M19 10.5L6.5 20" stroke="black" stroke-width="2" />
+                    </svg>
+                </a>
+            </li>
+
+
+
+
+        </ul>
+    </section>
+    </a>
+    <footer class="main-footer">
+        <div class="part1f">
+            <div class="phtxt">
+                <img src="image/Logo.png" alt="logof" class="logof">
+                <div class="justepourlignef">
+                    <div class="lignevertcentref"></div>
+                    <div class="colonedroite">
+                        <div class="parthautf">
+                            <div class="part1colonef1">
+                                <h3>INFO - PRATIQUE</h3>
+                                <div class="parttxt1">
+                                    <p class="txt1f">Préparez votre visite</p>
+                                    <p class="txt1f">Plan</p>
+                                    <p class="txt1f">Privatisation d’espace</p>
+                                    <p class="txt1f">Tournage et prise de vue</p>
+                                    <p class="txt1f">Presse</p>
+                                    <p class="txt1f">Recevoir les informations</p>
+                                    <p class="txt1f">Contacts</p>
+                                </div>
+                            </div>
+                            <div class="part2colonef1">
+                                <h3>HORAIRES</h3>
+                                <div class="parttxt2">
+                                    <p class="txt2f"><span style="font-weight: bold;">Vendredi</span> 6 décembre</p>
+                                    <p class="txt2f"><span style="font-weight: bold;">Samedi</span> 7 décembre</p>
+                                    <p class="txt2f"><span style="font-weight: bold;">Dimanche</span> 8 décembre</p>
+                                    <p class="txt2f"><span style="font-weight: bold;">Lundi</span> 9 décembre</p>
+                                    <p class="txt2f"><span style="font-weight: bold;">Mardi</span> 10 décembre</p>
+                                    <p class="txt2f"><span style="font-weight: bold;">Mercredi</span> 11 décembre</p>
+                                    <p class="txt2f"><span style="font-weight: bold;">Jeudi</span> 12 décembre</p>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colonef2">
+                            <h3>SUIVEZ - NOUS</h3>
+                            <div class="lignevert1f"></div>
+                            <div class="iconsf">
+                                <img src="image/logo-face.png" alt="facebook" class="logo-face">
+                                <img src="image/logo-insta.png" alt="insta" class="logo-insta">
+                                <img src="image/logo-x.png" alt="x" class="logo-x">
+                                <img src="image/logo-ytb.png" alt="ytb" class="logo-ytb">
+                            </div>
+                        </div>
+                        <div class="colonef3">
+                            <h3>LIENS - EXTERNE</h3>
+                            <div class="lignevert2f"></div>
+                            <div class="iconsbordf">
+                                <a href="https://www.bordeaux.fr/" target="_blank">
+                                    <img src="image/logo-bord.png" alt="Ville de Bordeaux" class="logo-bord">
+                                </a>
+                                <a href="https://bibliotheque.bordeaux.fr/" target="_blank">
+                                    <img src="image/logo-bibl.png" alt="Bibliotheque Bordeaux" class="logo-bibl">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="lignehoribasf"></div>
+        <div class="textinutile">
+            <p><div class="mentionleg">Données personnelles</div></p>
+            <p><div class="mentionleg">Cookies</div></p>
+            <p><div class="mentionleg">Accessibilité : partiellement conforme</div></p>
+            <p><div class="mentionleg">Crédits</div></p>
+            <p><div class="mentionleg">Photographiques</div></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
