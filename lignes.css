@@ -1,6 +1,6 @@
 
 .vertical-line {
-    border-left: 0.3vw solid; /* Ligne verticale noire */
+    border-left: 0.3vw solid ; /* Ligne verticale noire */
     position:absolute;
     height: 260vw; /* Hauteur de la ligne */
     top: 40vw;

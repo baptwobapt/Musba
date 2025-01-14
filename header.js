@@ -37,14 +37,30 @@ function toggleMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     mobileMenu.classList.toggle('show');
 }
-const themeToggle = document.getElementById('themeToggle');
+function toggleMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu) {
+      mobileMenu.classList.toggle('show');
+    } else {
+      console.error('Élément .mobile-menu introuvable.');
+    }
+  }
 
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('active');
-  themeToggle.textContent = document.body.classList.contains('active') 
-    ? 'Mode Clair' 
-    : 'Mode Sombre';
-  themeImage.src = document.body.classList.contains('active') 
-    ? 'image2.jpg' // Image pour le mode sombre
-    : 'image1.jpg'; // Image pour le mode clair
-});
+  const themeToggle = document.getElementById('themeToggle');
+  const themeImage = document.getElementById('themeImage');
+
+  if (themeToggle && themeImage) {
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('active');
+
+      themeToggle.textContent = document.body.classList.contains('active') 
+        ? 'Mode Clair' 
+        : 'Mode Sombre';
+
+      themeImage.src = document.body.classList.contains('active') 
+        ? 'image/ecritlogoBlanc.png' 
+        : 'image/ecritlogo.png'; 
+    });
+  } else {
+    console.error('Élément #themeToggle ou #themeImage introuvable.');
+  }

@@ -7,7 +7,20 @@ h2{
 .zonetextH{
     font-size: 18px;
 }
+body.active {
+    background-color: #121212;
+    color: #fff;
+  }
 
+  .mobile-menu {
+    display: none;
+    background: #f0f0f0;
+    padding: 10px;
+  }
+
+  .mobile-menu.show {
+    display: block;
+  }
 
 
 
