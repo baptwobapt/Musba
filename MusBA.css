@@ -111,7 +111,7 @@ h2.title-cut span:last-child {
     left: 50%; /* Positionne le texte Ã  50% de la largeur du carrÃ© */
     transform: translate(-50%, -50%); /* Centre parfaitement le texte */
     font-size: 24px; /* Taille du texte */
-    color: rgb(0, 0, 0); /* Couleur du texte */
+
     margin-top : 2300px;
     }
 
@@ -261,7 +261,7 @@ hr {
   
   .events-list li .event-box {
     display: flex;
-    border-top: 1px solid #000;
+    border-top: 1px solid ;
     justify-content: space-between;
     width: 35vw;
     gap: 30px;
@@ -269,7 +269,6 @@ hr {
   }
 
   .events-list li a{
-    color: #000;
     padding-right:220px ;
     font-size: 30px;
     margin-left: 20px;
@@ -280,7 +279,7 @@ hr {
   }
 
   li:last-child .event-box{
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid;
   }
 
   .events-list{
@@ -444,7 +443,6 @@ hr {
     }
 
     .events-list li a{
-        color: #000;
         padding-right:220px ;
         font-size: 30px;
         margin-right: -100px;

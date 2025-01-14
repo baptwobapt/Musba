@@ -21,4 +21,23 @@ body {
 *{
     z-index : 10 ;
 }
+.theme-toggle {
+    position: fixed;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+.theme-toggle:hover {
+    background: #0056b3;
+}
+body.active {
+    background-color: #121212;
+    color: #ffffff;
+  }
 

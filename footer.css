@@ -1,9 +1,7 @@
 .main-footer {
-    color: black;
     bottom: 0;
     width: 100%; /* Le header occupe toute la largeur de l'écran */
     height: 500px; /* Hauteur du header */
-    color: #ffffff; /* Couleur du texte */
 
      /* Marges intérieures */
     z-index: 960; /* S'assurer qu'il soit au-dessus des autres éléments */
@@ -68,7 +66,6 @@
     justify-content: center;
     height: 50px;
     gap: 20px;
-    color: black;
     font-size: 12px;
 
 }
@@ -113,9 +110,7 @@
     margin-left: 180px;
     margin-top: -10px;
 }
-h3 , .txt1f , .txt2f {
-    color: black;
-}
+
 .txt1f , .txt2f  {
     font-size: 16px;
 }

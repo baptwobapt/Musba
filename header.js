@@ -37,3 +37,14 @@ function toggleMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     mobileMenu.classList.toggle('show');
 }
+const themeToggle = document.getElementById('themeToggle');
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('active');
+  themeToggle.textContent = document.body.classList.contains('active') 
+    ? 'Mode Clair' 
+    : 'Mode Sombre';
+  themeImage.src = document.body.classList.contains('active') 
+    ? 'image2.jpg' // Image pour le mode sombre
+    : 'image1.jpg'; // Image pour le mode clair
+});

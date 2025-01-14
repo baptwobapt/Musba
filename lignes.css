@@ -1,6 +1,6 @@
 
 .vertical-line {
-    border-left: 0.3vw solid #000000; /* Ligne verticale noire */
+    border-left: 0.3vw solid; /* Ligne verticale noire */
     position:absolute;
     height: 260vw; /* Hauteur de la ligne */
     top: 40vw;
@@ -15,7 +15,7 @@
 }
 
 .custom-line {
-    border-left: 40vw solid #000000; /* Ligne verticale noire */
+    border-left: 40vw solid ; /* Ligne verticale noire */
     position:absolute;
     height: 0.3vw; /* Hauteur de la ligne */
     top: 45vw;
@@ -24,7 +24,7 @@
 }
 
 .custom-line2 {
-    border-left: 40vw solid #000000; /* Ligne verticale noire */
+    border-left: 40vw solid; /* Ligne verticale noire */
     position:absolute;
     height: 0.3vw; /* Hauteur de la ligne */
     top: 55vw;
