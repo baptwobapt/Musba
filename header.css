@@ -24,7 +24,7 @@
 }
 .dropdownh {
     display: none;
-    width: 100%;
+    width: auto;
     padding: 10px;
     font-size: 20px;
     border: 1px solid #ccc;
@@ -188,7 +188,6 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-
     overflow: hidden;
     animation: dropdownClose 0.3s forwards;
 }
@@ -210,8 +209,125 @@ body {
 .language-dropdown li:hover {
     background-color: #e0e0e0; /* Couleur de survol */
 }
-
-/* Animations pour la liste déroulante */
+/* Bouton Burger */
+.burger {
+    
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    z-index: 15000;
+    align-items: center;
+    display: none;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+  
+  /* Menu Burger */
+  .burger-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Menu hors de l'écran */
+    width: 100%;
+    height: 110%;
+    backdrop-filter: blur(10px);
+    background-color: #0c0c0cce;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 1500;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  /* Lien du menu */
+  .menu-linksburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .menu-linksburger a {
+    font-family: "Audiowide", serif;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 25px 0;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu-linksburger a:hover {
+    color: #9c9c9c; /* Couleur au survol */
+  }
+  
+  /* Classe active pour afficher le menu */
+  .burger-menu.active {
+    right: 0; /* Menu entre en vue */
+  }
+  
+  .burger-menu.active .menu-linksburger {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  body.no-scroll {
+    overflow: hidden; /* Empêche le défilement */
+    height: 100%; /* Évite les décalages d'arrière-plan */
+}
+  
 @keyframes dropdownOpen {
     from {
         max-height: 0;
@@ -237,6 +353,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    align-items: center;
 }
 
 @media only screen and (max-width: 750px) {
@@ -254,6 +371,7 @@ body {
         z-index: 960; /* S'assurer qu'il soit au-dessus des autres éléments */
     }
     .dropdownh{
+        font-size: 15px;
         display: block;
     }
     .dropdownh :focus{
@@ -267,5 +385,20 @@ body {
     .zonetextH {
         display: none;
         
+    }
+    .LogoH {
+        height: 40px;
+    }
+    .search-bar {
+        display: none;
+    }
+    .loupesel {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        height: 100%;
+    }
+    .burger {
+        display: block;
     }
 }

@@ -114,10 +114,12 @@
 .txt1f , .txt2f  {
     font-size: 16px;
 }
+
 @media only screen and (max-width: 750px) {
     .phtxt {
         display: flex;
         flex-direction: column;
+
     }
     .lignehoribasf {
         display: none;
@@ -125,8 +127,15 @@
     .lignevertcentref {
         display: none;
     }
+    .lignevert2f {
+        display: none;
+    }
+    .lignevert1f {
+        display: none;
+    }
     .logof {
         height: 100%;
+        margin-bottom: 100px;
         
     }
     .colonedroite {
@@ -139,7 +148,34 @@
         
 
     }
+    .justepourlignef {
+        margin-left: -10px;
+    }
+    .h4resa {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .attendez {
+        display: none;
+    }
+    .imgresa {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 00px;
+    }
+    .input-field {
+        max-width: 100%;
+    }
     .textinutile {
         display: none;
     }
+    .main-footer {
+        height: auto;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+
 }

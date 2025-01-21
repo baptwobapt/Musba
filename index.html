@@ -17,7 +17,8 @@
 
 <body>
     <header class="main-header">
-        <img id="themeImage" src="image/ecritlogo.png" alt="" class="LogoH">
+
+        <img src="image/ecritlogo.png" alt="" class="LogoH">
         <div class="zonetextH">
             <div class="expoH">
                 <h3>Expositions et Évènements</h3>
@@ -35,12 +36,13 @@
                 <h3>Visites et ateliers</h3>
                 <span class="linet linet-4"></span>
             </div>
-        </div>
-        
 
+        </div>
+        <div class="loupesel">
             <div class="search-bar">
-                <button class="theme-toggle" id="themeToggle">Mode Sombre</button>
-              
+                <button class="search-btn">
+                    <img src="image/loupe.png" alt="Rechercher" class="search-icon">
+                </button>
             </div>
             <div class="language-selector">
                 <div class="selected-language" onclick="toggleDropdown()">
@@ -49,13 +51,23 @@
                 </div>
                 <ul class="language-dropdown" id="language-dropdown"></ul>
             </div>
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div id="burger-menu" class="burger-menu">
+                <nav class="menu-linksburger">
+                    <a href="#">Expositions et Évènements</a>
+                    <a href="#">Collections</a>
+                    <a href="#">Vie du musée</a>
+                    <a href="#">Visites et ateliers</a>
+                </nav>
+            </div>
+              
             <script src="header.js"></script>
-            <select class="dropdownh">
-                <option>Expositions et Évènements</option>
-                <option>Collections</option>
-                <option>Vie du musée</option>
-                <option>Visites et ateliers</option>
-            </select>
+
         </div>
     </header>
     
@@ -167,7 +179,7 @@
         <div class="carre"></div>
         <ul class="events-list">
 
-            <li>
+            <li class="reservationtext" >
                 <div class="event-box">
                     <p>
                         Vendredi 6 décembre <br>
@@ -184,7 +196,7 @@
                 </a>
             </li>
 
-            <li>
+            <li class="reservationtext" >
                 <div class="event-box">
                     <p>
                         Samedi 7 Décembre <br>
@@ -201,7 +213,7 @@
                 </a>
             </li>
 
-            <li>
+            <li class="reservationtext" >
                 <div class="event-box">
                     <p>
                         Samedi 7 Décembre <br>

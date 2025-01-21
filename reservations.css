@@ -4,7 +4,9 @@ h4 {
     margin-left : 10vw;
     margin-top : 5vw;
 }
-
+body {
+    height: auto;
+}
 
 .carre {
     width: 70vw;

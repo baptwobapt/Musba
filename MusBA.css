@@ -202,7 +202,7 @@ p {
     height: 20vw;
     width: auto;
     position: relative;
-    z-index: 40000000;
+    z-index: 40;
 }
 
 
@@ -282,7 +282,7 @@ hr {
   }
 
   .events-list li a{
-    padding-right:220px ;
+    margin-right:220px ;
     font-size: 30px;
     margin-left: 20px;
     display: flex;
@@ -296,7 +296,7 @@ hr {
   }
 
   .events-list{
-    z-index: 999;
+    z-index: 9;
     position: relative;
   }
 
@@ -305,6 +305,7 @@ hr {
   }
 
 .resalien {
+    width: auto;
     font-size: 200px;
     display: block; /* Transforme le lien en bloc pour qu'il se comporte comme un div */
     text-decoration: none; /* Supprime le soulignement par défaut */
@@ -316,7 +317,10 @@ hr {
 .resalien:hover {
     color: #333333; /* Change la couleur du texte au survol */
 }
-
+.reservationtext {
+    display: flex;
+    flex-direction: row;
+}
   @media only screen and (max-width: 750px) {
     H2{
         font-size: 32px;
@@ -369,9 +373,9 @@ hr {
     }
 
     .img1{
-        width: 100vw;
+        width: 100%;
         margin-left: 0px;
-        height: 350px;
+        height: auto;
         margin-right: 0px;
     }
 
@@ -386,9 +390,9 @@ hr {
         width: 100vw;
     }
     .img2{
-        width: 105vw;
+        width: 100%;
         margin: 0px;
-        height: 350px;
+        height: auto;
         margin-top: -5px;
 
     }
@@ -403,6 +407,8 @@ hr {
     .textsect3{
         flex-direction: column;
         margin-right: 60px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .textsect3 p {
         width: 100%;
@@ -411,12 +417,13 @@ hr {
 
     .musee-img{
         flex-direction: column;
+        
     }
 
     .museeph{
         width: 100vw;
         margin: 0px;
-        height: 380px;
+        height: auto;
     }
 
     .our-history{
@@ -450,18 +457,46 @@ hr {
 
     .event-box{
         flex-direction: column;
+        padding: 0;
+        margin: 0%;
+        width: 80%;
     }
-    .resalien{
-        font-size: 200px;
-    }
+    .events-list li .event-box {
+        display: flex;
+        border-top: 1px solid ;
+        justify-content: space-between;
+        width: 90%;
+        gap: 20px;
+        padding: 20px 0;
+      }
+
 
     .events-list li a{
-        padding-right:220px ;
+        margin: 0%;
+        padding-right:0px ;
         font-size: 30px;
-        margin-right: -100px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 16px;
       }
-}
+    .reservationtext {
+        flex-direction: column;
+    }
+    .resalien{
+        font-size: 100px;
+        width: 200px;
+        padding-right: 0px;
+        margin-right: 0;
+    }
+    .container-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    h2.title-cut span {
+        font-size: 50px;
+    }
+  }

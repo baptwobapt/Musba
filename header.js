@@ -4,6 +4,7 @@ function toggleDropdown() {
     const dropdown = document.getElementById('language-dropdown');
     const arrowIcon = document.querySelector('.arrow-icon');
     const currentLanguage = document.getElementById('current-language').textContent;
+    
 
     // Toggle dropdown visibility
     if (dropdown.classList.contains('open')) {
@@ -33,34 +34,25 @@ function setLanguage(lang) {
     dropdown.classList.remove('open');
     dropdown.style.animation = 'dropdownClose 0.3s forwards';
 }
-function toggleMenu() {
-    const mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.classList.toggle('show');
-}
-function toggleMenu() {
-    const mobileMenu = document.querySelector('.mobile-menu');
-    if (mobileMenu) {
-      mobileMenu.classList.toggle('show');
-    } else {
-      console.error('Élément .mobile-menu introuvable.');
-    }
+const burger = document.querySelector(".burger");
+const burgerInput = document.getElementById("burger");
+const burgerMenu = document.getElementById("burger-menu");
+
+// Ajouter un événement pour ouvrir/fermer le menu
+burger.addEventListener("click", () => {
+  const isChecked = burgerInput.checked;
+  burgerMenu.classList.toggle("active", isChecked);
+
+});
+
+// Fermer le menu burger si un clic est effectué à l'extérieur
+document.addEventListener("click", (event) => {
+  if (
+    !burger.contains(event.target) &&
+    !burgerMenu.contains(event.target) &&
+    burgerInput.checked
+  ) {
+    burgerInput.checked = false; // Désactiver la case à cocher
+    burgerMenu.classList.remove("active"); // Retirer la classe active
   }
-
-  const themeToggle = document.getElementById('themeToggle');
-  const themeImage = document.getElementById('themeImage');
-
-  if (themeToggle && themeImage) {
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('active');
-
-      themeToggle.textContent = document.body.classList.contains('active') 
-        ? 'Mode Clair' 
-        : 'Mode Sombre';
-
-      themeImage.src = document.body.classList.contains('active') 
-        ? 'image/ecritlogoBlanc.png' 
-        : 'image/ecritlogo.png'; 
-    });
-  } else {
-    console.error('Élément #themeToggle ou #themeImage introuvable.');
-  }
+});
